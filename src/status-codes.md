@@ -2,7 +2,7 @@
 - jsontp uses HTTP status codes to indicate the success or failure of a request.
 - any valid HTTP status code is a valid jsontp status code - the only difference is that the message body is in JSON format.
 - while any status code can be used as the server sees fit, there are a few mentioned in the specification that are used in a specific way.
-## `505 HTTP Version Not Supported``
+## `505 HTTP Version Not Supported`
 - if the server does not support the version of jsontp that the client is using, it should respond with a `505 HTTP Version Not Supported` status code.
 ## `400 Bad Request`
 - if the server does not understand the request, it should respond with a `400 Bad Request` status code.
