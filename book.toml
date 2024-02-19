@@ -1,0 +1,7 @@
+[book]
+authors = ["werdl"]
+language = "en"
+multilingual = false
+src = "src"
+title = "jsontp"
+description = "This book details the usage of the jsontp standard in user friendly form"
