@@ -40,7 +40,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with mdBook
-        run: bin/mdbook build
+        run: |
+          export PATH="$PATH:$(pwd)/bin"
+          bash build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
